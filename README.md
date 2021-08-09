@@ -1,4 +1,4 @@
-# PyRIC 0.1.6.4: Python Radio Interface Controller
+# PyKill 1.0.0 fork of WiPy
 ## Linux wireless library for the Python Wireless Developer and Pentester
 ![](docs/logo.png?raw=true)
 
@@ -6,6 +6,11 @@
 [![PyPI Version](https://img.shields.io/pypi/v/PyRIC.svg)](https://pypi.python.org/pypi/PyRIC)
 ![Supported Python Versions](https://img.shields.io/pypi/pyversions/PyRIC.svg)
 ![Software status](https://img.shields.io/pypi/status/PyRIC.svg)
+
+
+## Fix:
+We needed to fix the unblock command of rfkill where it is not allowed to send a byte obj to "/dev/rfkill" instead we need to do the same as in unblock.
+See: https://github.com/Hoss-Mobility/WiPy/commit/64d239143ca7f9b18f51bc649334f6aab1c8cefa
 
 ## 1 DESCRIPTION:
 PyRIC (is a Linux only) library providing wireless developers and pentesters the

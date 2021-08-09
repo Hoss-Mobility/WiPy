@@ -26,10 +26,10 @@ sudo pip install PyRIC
 from setuptools import setup, find_packages
 import pyric
 
-setup(name='PyRIC',
-      version='0.0.3',
+setup(name='PyKill',
+      version='1.0.0',
       description="Python Wireless Library",
-      author='Dale Patterson',
+      author='Kast Stephan',
       license='GPLv3',
       classifiers=['Development Status :: 5 - Production/Stable',
                    'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
@@ -43,9 +43,8 @@ setup(name='PyRIC',
                    'Topic :: Utilities',
                    'Operating System :: POSIX :: Linux',
                    'Programming Language :: Python',
-                   'Programming Language :: Python :: 2.7',
                    'Programming Language :: Python :: 3.0',
-                   'Programming Language :: Python :: 3.5'],
+                   'Programming Language :: Python :: 3.7'],
     keywords='Linux Python nl80211 iw iwconfig ifconfig wireless WLAN WiFi pentest',
     packages=find_packages(),
     package_data={'pyric':['nlhelp/*.help','utils/data/*.txt']}
